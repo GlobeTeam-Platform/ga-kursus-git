@@ -1,3 +1,3 @@
-# Workshop
+# Git Workshop
 
-Workshop description
+Git Workshop
