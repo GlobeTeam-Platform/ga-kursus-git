@@ -1,7 +1,7 @@
 ---
 theme: ./
 layout: cover
-background: learn.jpg
+background: /learn.jpg
 ---
 
 # Git Workshop
@@ -14,13 +14,13 @@ layout: about-me
 
 ---
 layout: image-right
-image: git.jpg
+image: /git.jpg
 ---
 
 # Git
 
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency
-
+![git logo](/git-logo.png)
 
 
 ---
@@ -28,11 +28,11 @@ layout: section
 ---
 
 # Git Flow
-![git flow](git-flow.png)
+![git flow](/git-flow.png)
 
 ---
 layout: image-right
-image: branch.jpg
+image: /branch.jpg
 ---
 
 # Basic Concepts
@@ -55,7 +55,7 @@ Copy of the main repository, under your own name.
 
 ---
 layout: image-right
-image: github.jpg
+image: /github.jpg
 ---
 
 # Other solutions
@@ -73,12 +73,12 @@ layout: center
 
 # Git is easy
 But can also be realy hard
-<img src="git-joke.png" alt="git-joke" width="600"/>
+<img src="/git-joke.png" alt="git-joke" width="600"/>
 
 
 ---
 layout: cover
-background: learn-2.jpg
+background: /learn-2.jpg
 ---
 
 # Start learning
