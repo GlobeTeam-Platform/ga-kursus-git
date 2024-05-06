@@ -1,7 +1,7 @@
 apiVersion: training.educates.dev/v1beta1
 kind: Workshop
 metadata:
-  name: "ga-kursus-git"
+  name: "educates"
 spec:
   title: "Git fundamentals"
   description: "Learn the fundamentals of Git"
