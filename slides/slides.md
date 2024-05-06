@@ -38,19 +38,24 @@ image: /branch.jpg
 # Basic Concepts
 
 1. Repository
+
 The place where you code is storred. 
 Can be local and/or remote
 
 2. Branch
+
 Is a movable pointer to one of the commits.
 
 3. Commit
+
 Snapshot of the project with the newly added changes
 
 4. Clone
+
 Local copy of the repository. 
 
 5. Fork
+
 Copy of the main repository, under your own name.
 
 ---
@@ -60,10 +65,10 @@ image: /github.jpg
 
 # Other solutions
 
-* Github
-* Gitlab
-* Azure Devops
-* Atlasian
+* [Github](www.github.com)
+* [Gitlab](www.gitlab.com)
+* [Azure Devops](https://azure.microsoft.com/en-us/products/devops/)
+* [Bitbucket](https://www.atlassian.com/software/bitbucket)
 * Others
 
 ---
