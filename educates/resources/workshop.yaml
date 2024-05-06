@@ -5,15 +5,15 @@ metadata:
 spec:
   title: "Git fundamentals"
   description: "Learn the fundamentals of Git"
-  url: https://github.com/GlobeTeam-Platform/ga-kursus
+  url: https://github.com/GlobeTeam-Platform/ga-kursus-git
   tags:
     - git
   publish:
-    image: "$(image_repository)/git-files:$(workshop_version)"
+    image: "$(image_repository)/ga-kursus-git-files:$(workshop_version)"
   workshop:
     files:
     - image:
-        url: $(image_repository)/git-files:$(workshop_version)
+        url: $(image_repository)/ga-kursus-git-files:$(workshop_version)
       includePaths:
       - /workshop/**
       - /exercises/**
@@ -22,9 +22,9 @@ spec:
     namespaces:
       budget: medium
     applications:
-      git:
-        enabled: true
       slides:
+        enabled: true
+      git:
         enabled: true
       terminal:
         enabled: true
