@@ -9,11 +9,11 @@ spec:
   tags:
     - git
   publish:
-    image: "$(image_repository)/workshop-files:$(workshop_version)"
+    image: "$(image_repository)/ga-kursus-git-files:$(workshop_version)"
   workshop:
     files:
     - image:
-        url: $(image_repository)/workshop-files:$(workshop_version)
+        url: $(image_repository)/ga-kursus-git-files:$(workshop_version)
       includePaths:
       - /workshop/**
       - /exercises/**
