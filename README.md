@@ -4,5 +4,5 @@ Git Workshop
 
 ## Deploy
 ```bash
-educates deploy-workshop -f https://github.com/GlobeTeam-Platform/ga-kursus-git/releases/download/0.0-beta.3/workshop.yaml
+educates deploy-workshop -f https://github.com/GlobeTeam-Platform/ga-kursus-git/releases/download/0.0-rc.2/workshop.yaml
 ```
