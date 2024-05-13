@@ -17,5 +17,5 @@ spec:
         initial: 0
   workshops:
   - name: git
-    expires: 60m
-    orphaned: 5m
+    expires: 180m
+    orphaned: 15m
