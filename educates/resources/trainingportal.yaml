@@ -4,6 +4,7 @@ metadata:
   name: git
 spec:
   portal:
+    password: GlobeAcademy
     registration:
       type: anonymous
     updates:
