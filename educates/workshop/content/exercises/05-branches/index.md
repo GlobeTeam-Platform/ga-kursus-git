@@ -10,8 +10,10 @@ There are many concepts on when to branch, and for how long.
 For this module, we will focus on the how, more than on the why.
 
 To see the branches currently avaliable run
-```execute
-git branch --list
+```terminal:execute
+prefix: Run
+title: See git branches
+command: git branch --list
 ```
 
 the output should look like this 
@@ -23,13 +25,17 @@ the output should look like this
 The `*`shows what branch we are currently on.
 
 Let's create a new branch by running
-```execute
-git branch my-new-branch
+```terminal:execute
+prefix: Run
+title: Create new branch
+command: git branch my-new-branch
 ```
 
 If you run
-```execute
-git branch --list
+```terminal:execute
+prefix: Run
+title: List branches
+command: git branch --list
 ```
 
 The output should now be
@@ -40,13 +46,17 @@ The output should now be
 ```
 
 If we want to move to our new branch, we can simply run
-```execute
-git checkout my-new-branch
+```terminal:execute
+prefix: Run
+title: Change branch
+command: git checkout my-new-branch
 ```
 
 To confirm run 
-```execute
-git branch --list
+```terminal:execute
+prefix: Run
+title: Get current branch
+command: git branch --list
 ```
 
 The output should now be
@@ -61,20 +71,27 @@ All the changes you make and commit from now on, will be in the `my-new-branch` 
 Let's make some new changes, commit them, and then merge them back to the main branch
 
 Run the following
-```execute
-echo > file2.txt
-git add file2.txt
-git commit -m "added file2.txt"
+```terminal:execute
+prefix: Run
+title: Make new changes and then merge
+command: |
+  echo > file2.txt
+  git add file2.txt
+  git commit -m "added file2.txt"
 ```
 
 To merge the changes we just created, into the `main` branch, we first need to change to it by running
-```execute
-git checkout main
+```terminal:execute
+prefix: Run
+title: Change branch
+command: git checkout main
 ```
 
 To merge it, we simply run
-```execute
-git merge my-new-branch
+```terminal:execute
+prefix: Run
+title: Merge branch
+command: git merge my-new-branch
 ```
 
 Since our new branch came directly from the `main´ branch, and there has been no changes to the branch, we can simply merge it, without any conflicts.

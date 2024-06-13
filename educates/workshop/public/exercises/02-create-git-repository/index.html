@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/workshop/content/livereload.js?mindelay=10&amp;v=2&amp;port=80&amp;path=workshop/content/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="generator" content="Educates (hugo)">
+
+<title>
+  
+  </title>
+
+<link rel="stylesheet" href='/workshop/static/bootstrap/css/bootstrap.css'>
+<link rel="stylesheet" href='/workshop/static/fontawesome/css/all.min.css'>
+
+<link rel="stylesheet" href='/workshop/static/styles/educates.css'>
+<link rel="stylesheet" href='/workshop/static/styles/educates-markdown.css'>
+<link rel="stylesheet" href='/workshop/static/theme/workshop-instructions.css'>
+
+<link rel="shortcut icon" href='/workshop/static/images/favicon.ico'>
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body data-google-tracking-id=''
+  data-clarity-tracking-id=''
+  data-amplitude-tracking-id='' data-workshop-name='educates-cli--git-0edc899'
+  data-session-namespace='educates-cli-w02-s001' data-workshop-namespace='educates-cli-w02'
+  data-training-portal='educates-cli' data-ingress-domain='192.168.50.243.nip.io'
+  data-ingress-protocol='http' data-ingress-port-suffix=''
+  data-prev-page='exercises/01-configure-git' data-current-page='exercises/02-create-git-repository'
+  data-next-page='exercises/03-create-first-changes-cli' data-page-format='markdown' data-code-fences='chroma'
+  data-page-step='3' data-pages-total='9'>
+
+  
+
+
+
+
+<div class="modal fade" id="table-of-contents" tabindex="-1" role="dialog" aria-labelledby="table-of-contents-title"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="table-of-contents-title">Git fundamentals</h5>
+                <button class="btn btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="menu">
+                    <li class="category">
+                        <ul class="modules">
+                            
+                            
+                            
+                            
+                            
+                            <li class="page">
+                                <a href="/workshop/content/exercises/00-workshop-overview">1: Workshop Overview</a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li class="page">
+                                <a href="/workshop/content/exercises/01-configure-git">2: Configure GIT</a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li class="page active">
+                                <a href="/workshop/content/exercises/02-create-git-repository">3: Create GIT Repository</a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li class="page">
+                                <a href="/workshop/content/exercises/03-create-first-changes-cli">4: Create First Changes (CLI)</a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li class="page">
+                                <a href="/workshop/content/exercises/04-create-first-changes-ui">5: Create First Changes (UI)</a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li class="page">
+                                <a href="/workshop/content/exercises/05-branches">6: Branches</a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li class="page">
+                                <a href="/workshop/content/exercises/06-remote-git-repository">7: Remote GIT repository</a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li class="page">
+                                <a href="/workshop/content/exercises/07-clone-repository">8: Clone Repository</a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li class="page">
+                                <a href="/workshop/content/exercises/08-fork-repository">9: Fork a repository</a>
+                            </li>
+                            
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="header page-navbar sticky-top bg-primary">
+    <div class="row row-no-gutters">
+        <div class="col-sm-12">
+            <div class="btn-group btn-group-sm" role="group">
+                <form action='/workshop/content/'>
+                    <button class="btn btn-transparent" id="header-goto-home" type="submit" aria-label="home"><span
+                            class="fas fa-home fa-inverse" aria-hidden="true"></span></button>
+                </form>
+            </div>
+            <div class="btn-toolbar float-end" role="toolbar">
+                <div class="btn-group btn-group-sm" role="group">
+                    <form action="/workshop/content/exercises/01-configure-git">
+                        <button class="btn btn-transparent" id="header-prev-page" type="submit"  aria-label="Prev"><span
+                                class="fas fa-arrow-left fa-inverse" aria-hidden="true"></span></button>
+                    </form>
+                    <form>
+                        <button class="btn btn-transparent" id="header-goto-toc" type="button" aria-label="TOC"
+                            data-bs-toggle="modal" data-bs-target="#table-of-contents"><span class="fas fa-list fa-inverse"
+                                aria-hidden="true"></span></button>
+                    </form>
+                    <form action="/workshop/content/exercises/03-create-first-changes-cli">
+                        <button class="btn btn-transparent" id="header-next-page" type="submit"  aria-label="Next"><span
+                                class="fas fa-arrow-right fa-inverse" aria-hidden="true"></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+
+
+
+
+<div class="container-fluid main-content">
+  <div class="row">
+    <div class="col-sm-12">
+      <section class="page-content" id="main">
+        
+        
+        
+        <h1 class="title" id="title">3: Create GIT Repository</h1>
+        
+        <div class="rendered-content">
+          <p>Let&rsquo;s initialize our working folder with git.</p>
+<p>Initialize the folder, so it can be tracket using git by running</p>
+<pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
+title: Initialize folder
+command: git init
+</code></pre><p>When you init a folder, then git creates a .git folder, with the config and database etc.</p>
+<p>You can see that, by running the following command</p>
+<pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
+title: Browse git folder
+command: ls .git
+</code></pre><p>This should provide the following output</p>
+<pre tabindex="0"><code>HEAD  branches  config  description  hooks  info  objects  refs
+</code></pre><p>Let&rsquo;s check the status of the git repo, by running</p>
+<pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
+title: Get status
+command: git status
+</code></pre><p>The output should look like this</p>
+<pre tabindex="0"><code>On branch main
+
+No commits yet
+
+Untracked files:
+  (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed)
+        readme.md
+
+nothing added to commit but untracked files present (use &#34;git add&#34; to track)
+</code></pre>
+        </div>
+        
+        <div class="page-meta clearfix">
+          <form action="/workshop/content/exercises/03-create-first-changes-cli">
+            <button class="btn btn-lg btn-primary float-end" id="next-page" type="submit" aria-label="continue">
+              Continue </button>
+          </form>
+        </div>
+        
+      </section>
+    </div>
+  </div>
+</div>
+</section>
+
+
+  <script src='/workshop/static/scripts/educates-bundle.js'></script>
+<script src='/workshop/static/theme/workshop-instructions.js'></script>
+
+
+</body>
+
+</html>

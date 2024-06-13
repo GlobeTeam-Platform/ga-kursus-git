@@ -10,13 +10,17 @@ The most known ones are probably [Github](www.github.com) and [Gitlab](www.gitla
 In this lab, we have our own Git server, that we can use.
 
 First we will add a remote source, to our repo, by running the following in our teminal
-```execute
-git remote add origin http://$GIT_HOST/mygitrepo.git
+```terminal:execute
+prefix: Run
+title: Add remote source
+command: git remote add origin http://$GIT_HOST/mygitrepo.git
 ```
 
 Then we will push our local repository, to the remote repository.
-```execute
-git push -u -f origin main
+```terminal:execute
+prefix: Run
+title: Push local repository to remote
+command: git push -u -f origin main
 ```
 Note this command forces the changes thru. So it might not be best practice, outside of this lab.
 

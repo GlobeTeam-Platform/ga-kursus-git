@@ -5,40 +5,54 @@ title: "Create First Changes (CLI)"
 Let's use the CLI to create some changes and see how Git handles them.
 
 Create a file with text
-```execute
-echo "initial content" > file1.txt
+```terminal:execute
+prefix: Run
+title: Create file
+command: echo "initial content" > file1.txt
 ```
 
 Stage the new file, we just created.
-```execute
-git add file1.txt
+```terminal:execute
+prefix: Run
+title: Stage file1.txt
+command: git add file1.txt
 ```
 
 commit changes, with the commit message "My first change"
-```execute
-git commit -m "My first change"
+```terminal:execute
+prefix: Run
+title: Commit changes
+command: git commit -m "My first change"
 ```
 
 make a new change to the file
-```execute
-echo "new content" >> file1.txt
+```terminal:execute
+prefix: Run
+title: Add content to file1.txt
+command: echo "new content" >> file1.txt
 ```
 
 Note at any time, you can see the content of the file, by typing `cat file1.txt` or by selecting it in the editor view.
 
 Stage the new changes
-```execute
-git add file1.txt
+```terminal:execute
+prefix: Run
+title: Stage changes to file1.txt
+command: git add file1.txt
 ```
 
 commit new changes
-```execute
-git commit -m "My second change"
+```terminal:execute
+prefix: Run
+title: Commit changes
+command: git commit -m "My second change"
 ```
 
 See the changes you have done
-```execute
-git log --graph
+```terminal:execute
+prefix: Run
+title: See changes comitted
+command: git log --graph
 ```
 
 You should now see a log of all the changes you have made, compete with author, timestamp and commit message.

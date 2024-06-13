@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://localhost:1313/workshop/content/</link>
+    <description>Recent content on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/workshop/content/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Branches</title>
+      <link>http://localhost:1313/workshop/content/exercises/05-branches/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/workshop/content/exercises/05-branches/</guid>
+      <description>Branching means you diverge from the main line of development and continue to do work without messing with that main line There are many concepts on when to branch, and for how long.&#xA;For this module, we will focus on the how, more than on the why.&#xA;To see the branches currently avaliable run&#xA;prefix: Run title: See git branches command: git branch --list the output should look like this</description>
+    </item>
+    <item>
+      <title>Clone Repository</title>
+      <link>http://localhost:1313/workshop/content/exercises/07-clone-repository/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/workshop/content/exercises/07-clone-repository/</guid>
+      <description>Most times, you probably won&amp;rsquo;t start from scratch, but will start with an already existing repository, that you want local, to begin testing or developing on.&#xA;The way to do that, is to Clone the repository.&#xA;Since we are currently working in an existing Git repository, we will start by deleting that, and then clone our existing remote repository.&#xA;Run the following, to delete all files in the folder, including the hidden .</description>
+    </item>
+    <item>
+      <title>Configure GIT</title>
+      <link>http://localhost:1313/workshop/content/exercises/01-configure-git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/workshop/content/exercises/01-configure-git/</guid>
+      <description>Start by configuring Git.&#xA;Setup your username (replace John Doe, with your real name)&#xA;prefix: Run title: Setup username command: git config --global user.name &amp;#34;John Doe&amp;#34; Setup your email (replace johndoe@example.com, with your real email)&#xA;prefix: Run title: Setup email command: git config --global user.email johndoe@example.com Set the default branch name. If you don&amp;rsquo;t change it, then it will be master in this version. But there is a trend towards using main instead.</description>
+    </item>
+    <item>
+      <title>Create First Changes (CLI)</title>
+      <link>http://localhost:1313/workshop/content/exercises/03-create-first-changes-cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/workshop/content/exercises/03-create-first-changes-cli/</guid>
+      <description>Let&amp;rsquo;s use the CLI to create some changes and see how Git handles them.&#xA;Create a file with text&#xA;prefix: Run title: Create file command: echo &amp;#34;initial content&amp;#34; &amp;gt; file1.txt Stage the new file, we just created.&#xA;prefix: Run title: Stage file1.txt command: git add file1.txt commit changes, with the commit message &amp;ldquo;My first change&amp;rdquo;&#xA;prefix: Run title: Commit changes command: git commit -m &amp;#34;My first change&amp;#34; make a new change to the file</description>
+    </item>
+    <item>
+      <title>Create First Changes (UI)</title>
+      <link>http://localhost:1313/workshop/content/exercises/04-create-first-changes-ui/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/workshop/content/exercises/04-create-first-changes-ui/</guid>
+      <description>Let&amp;rsquo;s now use the UI, to do the same as before.&#xA;Switch to the editor tab.&#xA;Open file1.txt and add a new line at the bottom. In our example we wrote &amp;#34;More content&amp;#34; Click on the source Controlicon (there should be a number next to it) If the number is 2, that means that there is 2 files with changes in this Git repository.&#xA;If you followed the guide, then the 2 files are</description>
+    </item>
+    <item>
+      <title>Create GIT Repository</title>
+      <link>http://localhost:1313/workshop/content/exercises/02-create-git-repository/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/workshop/content/exercises/02-create-git-repository/</guid>
+      <description>Let&amp;rsquo;s initialize our working folder with git.&#xA;Initialize the folder, so it can be tracket using git by running&#xA;prefix: Run title: Initialize folder command: git init When you init a folder, then git creates a .git folder, with the config and database etc.&#xA;You can see that, by running the following command&#xA;prefix: Run title: Browse git folder command: ls .git This should provide the following output&#xA;HEAD branches config description hooks info objects refs Let&amp;rsquo;s check the status of the git repo, by running</description>
+    </item>
+    <item>
+      <title>Fork a repository</title>
+      <link>http://localhost:1313/workshop/content/exercises/08-fork-repository/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/workshop/content/exercises/08-fork-repository/</guid>
+      <description>When working with a managed Git solution, like Github or Gitlab, then you will stumble upon the frase &amp;ldquo;Fork a repository&amp;rdquo;&#xA;Github explains it like this&#xA;A fork is a new repository that shares code and visibility settings with the original “upstream” repository. Forks are often used to iterate on ideas or changes before they are proposed back to the upstream repository, such as in open source projects or when a user does not have write access to the upstream repository</description>
+    </item>
+    <item>
+      <title>Remote GIT repository</title>
+      <link>http://localhost:1313/workshop/content/exercises/06-remote-git-repository/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/workshop/content/exercises/06-remote-git-repository/</guid>
+      <description>A local git repository is fine. But when you need to work with others, then a remote repository, is needed.&#xA;There are many different solutions for this. The most known ones are probably Github and Gitlab.&#xA;In this lab, we have our own Git server, that we can use.&#xA;First we will add a remote source, to our repo, by running the following in our teminal&#xA;prefix: Run title: Add remote source command: git remote add origin http://$GIT_HOST/mygitrepo.</description>
+    </item>
+    <item>
+      <title>Workshop Overview</title>
+      <link>http://localhost:1313/workshop/content/exercises/00-workshop-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/workshop/content/exercises/00-workshop-overview/</guid>
+      <description>Welcome to Git fundamentals&#xA;This workshop will take you thru the basics of Git, so you have a better understanding on how to use it, and how it can usefull for your daily work.</description>
+    </item>
+  </channel>
+</rss>
