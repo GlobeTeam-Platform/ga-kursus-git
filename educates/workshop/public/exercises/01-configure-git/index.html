@@ -227,7 +227,7 @@
 <body data-google-tracking-id=''
   data-clarity-tracking-id=''
   data-amplitude-tracking-id='' data-workshop-name='educates-cli--git-0edc899'
-  data-session-namespace='educates-cli-w02-s001' data-workshop-namespace='educates-cli-w02'
+  data-session-namespace='educates-cli-w02-s002' data-workshop-namespace='educates-cli-w02'
   data-training-portal='educates-cli' data-ingress-domain='192.168.50.243.nip.io'
   data-ingress-protocol='http' data-ingress-port-suffix=''
   data-prev-page='exercises/00-workshop-overview' data-current-page='exercises/01-configure-git'
@@ -390,17 +390,18 @@
         <h1 class="title" id="title">2: Configure GIT</h1>
         
         <div class="rendered-content">
-          <p>Start by configuring Git.</p>
-<p>Setup your username (replace John Doe, with your real name)</p>
+          <p>To use Git, you first need to setup your username and email.</p>
+<p>Run the following commands to do so.</p>
+<p>replace John Doe, with your real name, if you want to use that.</p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: Setup username
 command: git config --global user.name &#34;John Doe&#34;
-</code></pre><p>Setup your email (replace <a href="mailto:johndoe@example.com">johndoe@example.com</a>, with your real email)</p>
+</code></pre><p>Do the same for email.</p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: Setup email
 command: git config --global user.email johndoe@example.com
-</code></pre><p>Set the default branch name. If you don&rsquo;t change it, then it will be master in this version. But there is a trend towards using main instead.
-To change it to main, run the following command.</p>
+</code></pre><p>Set the default branch name. If you don&rsquo;t change it, then it will be master in this version.</p>
+<p>There is a trend towards using main instead of master, due to the reference to &ldquo;master &amp; slave&rdquo;.</p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: Set default branch
 command: git config --global init.defaultBranch main

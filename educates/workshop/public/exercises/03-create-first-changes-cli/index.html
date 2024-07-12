@@ -227,7 +227,7 @@
 <body data-google-tracking-id=''
   data-clarity-tracking-id=''
   data-amplitude-tracking-id='' data-workshop-name='educates-cli--git-0edc899'
-  data-session-namespace='educates-cli-w02-s001' data-workshop-namespace='educates-cli-w02'
+  data-session-namespace='educates-cli-w02-s002' data-workshop-namespace='educates-cli-w02'
   data-training-portal='educates-cli' data-ingress-domain='192.168.50.243.nip.io'
   data-ingress-protocol='http' data-ingress-port-suffix=''
   data-prev-page='exercises/02-create-git-repository' data-current-page='exercises/03-create-first-changes-cli'
@@ -391,7 +391,7 @@
         
         <div class="rendered-content">
           <p>Let&rsquo;s use the CLI to create some changes and see how Git handles them.</p>
-<p>Create a file with text</p>
+<p>Create a file with the text &ldquo;initial content&rdquo;</p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: Create file
 command: echo &#34;initial content&#34; &gt; file1.txt
@@ -399,7 +399,7 @@ command: echo &#34;initial content&#34; &gt; file1.txt
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: Stage file1.txt
 command: git add file1.txt
-</code></pre><p>commit changes, with the commit message &ldquo;My first change&rdquo;</p>
+</code></pre><p>commit the staged changes, with the commit message &ldquo;My first change&rdquo;</p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: Commit changes
 command: git commit -m &#34;My first change&#34;
@@ -442,8 +442,8 @@ index f2376e2..7451b6f 100644
 @@ -1 +1,2 @@
  initial content
 +new content
-```
-</code></pre>
+</code></pre><p>Here you can see the changes, that has been made to the file, compared to last commit.</p>
+
         </div>
         
         <div class="page-meta clearfix">

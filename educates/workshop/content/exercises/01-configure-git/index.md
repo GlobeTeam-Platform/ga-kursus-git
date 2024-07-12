@@ -2,24 +2,29 @@
 title: "Configure GIT"
 ---
 
-Start by configuring Git.
+To use Git, you first need to setup your username and email.
 
-Setup your username (replace John Doe, with your real name)
+Run the following commands to do so.
+
+replace John Doe, with your real name, if you want to use that.
+
 ```terminal:execute
 prefix: Run
 title: Setup username
 command: git config --global user.name "John Doe"
 ```
 
-Setup your email (replace johndoe@example.com, with your real email)
+Do the same for email.
 ```terminal:execute
 prefix: Run
 title: Setup email
 command: git config --global user.email johndoe@example.com
 ```
 
-Set the default branch name. If you don't change it, then it will be master in this version. But there is a trend towards using main instead. 
-To change it to main, run the following command.
+Set the default branch name. If you don't change it, then it will be master in this version. 
+
+There is a trend towards using main instead of master, due to the reference to "master & slave".
+
 ```terminal:execute
 prefix: Run
 title: Set default branch

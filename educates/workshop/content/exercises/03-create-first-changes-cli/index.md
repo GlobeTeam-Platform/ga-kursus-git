@@ -4,7 +4,7 @@ title: "Create First Changes (CLI)"
 
 Let's use the CLI to create some changes and see how Git handles them.
 
-Create a file with text
+Create a file with the text "initial content"
 ```terminal:execute
 prefix: Run
 title: Create file
@@ -18,7 +18,7 @@ title: Stage file1.txt
 command: git add file1.txt
 ```
 
-commit changes, with the commit message "My first change"
+commit the staged changes, with the commit message "My first change"
 ```terminal:execute
 prefix: Run
 title: Commit changes
@@ -75,7 +75,7 @@ If you want to see the changes, you made to the file, then copy the commit id (f
 git diff dd0ddd1d156e3dacbfde71a2ba5ed16f78034b82
 ```
 The output should look like this
-````
+```
 diff --git a/file1.txt b/file1.txt
 index f2376e2..7451b6f 100644
 --- a/file1.txt
@@ -84,3 +84,6 @@ index f2376e2..7451b6f 100644
  initial content
 +new content
 ```
+
+
+Here you can see the changes, that has been made to the file, compared to last commit.

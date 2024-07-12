@@ -227,7 +227,7 @@
 <body data-google-tracking-id=''
   data-clarity-tracking-id=''
   data-amplitude-tracking-id='' data-workshop-name='educates-cli--git-0edc899'
-  data-session-namespace='educates-cli-w02-s001' data-workshop-namespace='educates-cli-w02'
+  data-session-namespace='educates-cli-w02-s002' data-workshop-namespace='educates-cli-w02'
   data-training-portal='educates-cli' data-ingress-domain='192.168.50.243.nip.io'
   data-ingress-protocol='http' data-ingress-port-suffix=''
   data-prev-page='exercises/01-configure-git' data-current-page='exercises/02-create-git-repository'
@@ -391,7 +391,7 @@
         
         <div class="rendered-content">
           <p>Let&rsquo;s initialize our working folder with git.</p>
-<p>Initialize the folder, so it can be tracket using git by running</p>
+<p>Initialize the folder, so it can be tracked using git by running</p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: Initialize folder
 command: git init
@@ -399,9 +399,36 @@ command: git init
 <p>You can see that, by running the following command</p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: Browse git folder
-command: ls .git
+command: tree .git
 </code></pre><p>This should provide the following output</p>
-<pre tabindex="0"><code>HEAD  branches  config  description  hooks  info  objects  refs
+<pre tabindex="0"><code>.git
+├── HEAD
+├── branches
+├── config
+├── description
+├── hooks
+│   ├── applypatch-msg.sample
+│   ├── commit-msg.sample
+│   ├── fsmonitor-watchman.sample
+│   ├── post-update.sample
+│   ├── pre-applypatch.sample
+│   ├── pre-commit.sample
+│   ├── pre-merge-commit.sample
+│   ├── pre-push.sample
+│   ├── pre-rebase.sample
+│   ├── pre-receive.sample
+│   ├── prepare-commit-msg.sample
+│   ├── push-to-checkout.sample
+│   ├── sendemail-validate.sample
+│   └── update.sample
+├── info
+│   └── exclude
+├── objects
+│   ├── info
+│   └── pack
+└── refs
+    ├── heads
+    └── tags
 </code></pre><p>Let&rsquo;s check the status of the git repo, by running</p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: Get status
@@ -416,7 +443,8 @@ Untracked files:
         readme.md
 
 nothing added to commit but untracked files present (use &#34;git add&#34; to track)
-</code></pre>
+</code></pre><p>Meaning that this is a Git repo, on branch main, with no commit&rsquo;s yet.</p>
+
         </div>
         
         <div class="page-meta clearfix">
