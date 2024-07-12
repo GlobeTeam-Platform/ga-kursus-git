@@ -63,7 +63,7 @@ layout: image-right
 image: /github.jpg
 ---
 
-# Other solutions
+# Other (hosted) solutions
 
 * [Github](www.github.com)
 * [Gitlab](www.gitlab.com)
