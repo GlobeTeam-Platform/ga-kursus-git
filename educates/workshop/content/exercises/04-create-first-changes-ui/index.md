@@ -4,7 +4,10 @@ title: "Create First Changes (UI)"
 
 Let's now use the UI, to do the same as before.
 
-Switch to the editor tab.
+```editor:open-file
+title: Open file1.txt
+file: ~/exercises/file1.txt
+```
 
 ```
 Open file1.txt and add a new line at the bottom.
@@ -12,7 +15,7 @@ In our example we wrote "More content"
 ```
 ![add content](1.png)
 
-Click on the `source Control`icon (there should be a number next to it)
+Click on the `source Control` icon (there should be a number next to it)
 ![source control](2.png)
 
 If the number is 2, that means that there is 2 files with changes in this Git repository.
@@ -37,3 +40,4 @@ We have written "my ui changes" as our commit message.
 After you click `Commit` the button changes to publish branch.
 If this Git repo was part of a remote Git repo, then we could now push our changes to that repo (or create a new repository on that remote server), for all to see, and colaborate.
 
+Skip this for now.

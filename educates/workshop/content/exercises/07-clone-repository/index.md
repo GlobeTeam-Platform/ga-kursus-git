@@ -13,7 +13,9 @@ Run the following, to delete all files in the folder, including the hidden `.git
 ```terminal:execute
 prefix: Run
 title: Cleanup
-command: rm -rf * .*
+command: |
+    clear
+    rm -rf * .*
 ```
 
 Then clone your remote repository by running
@@ -44,5 +46,7 @@ prefix: Run
 title: See file
 command: cat mygitrepo/file1.txt
 ```
+
+By cloning the repo, the origin, is already setup, so it 
 
 This repository is setup as a remote repository. This means, that all changes you do, can be pushed to the remote repository.

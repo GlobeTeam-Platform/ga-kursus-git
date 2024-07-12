@@ -227,7 +227,7 @@
 <body data-google-tracking-id=''
   data-clarity-tracking-id=''
   data-amplitude-tracking-id='' data-workshop-name='educates-cli--git-0edc899'
-  data-session-namespace='educates-cli-w02-s002' data-workshop-namespace='educates-cli-w02'
+  data-session-namespace='educates-cli-w04-s001' data-workshop-namespace='educates-cli-w04'
   data-training-portal='educates-cli' data-ingress-domain='192.168.50.243.nip.io'
   data-ingress-protocol='http' data-ingress-port-suffix=''
   data-prev-page='exercises/06-remote-git-repository' data-current-page='exercises/07-clone-repository'
@@ -396,7 +396,9 @@
 <p>Run the following, to delete all files in the folder, including the hidden <code>.git</code></p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: Cleanup
-command: rm -rf * .*
+command: |
+    clear
+    rm -rf * .*
 </code></pre><p>Then clone your remote repository by running</p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: Clone remote repository
@@ -413,7 +415,8 @@ command: ls mygitrepo
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: See file
 command: cat mygitrepo/file1.txt
-</code></pre><p>This repository is setup as a remote repository. This means, that all changes you do, can be pushed to the remote repository.</p>
+</code></pre><p>By cloning the repo, the origin, is already setup, so it</p>
+<p>This repository is setup as a remote repository. This means, that all changes you do, can be pushed to the remote repository.</p>
 
         </div>
         

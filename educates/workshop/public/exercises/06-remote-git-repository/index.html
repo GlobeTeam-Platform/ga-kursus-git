@@ -227,7 +227,7 @@
 <body data-google-tracking-id=''
   data-clarity-tracking-id=''
   data-amplitude-tracking-id='' data-workshop-name='educates-cli--git-0edc899'
-  data-session-namespace='educates-cli-w02-s002' data-workshop-namespace='educates-cli-w02'
+  data-session-namespace='educates-cli-w04-s001' data-workshop-namespace='educates-cli-w04'
   data-training-portal='educates-cli' data-ingress-domain='192.168.50.243.nip.io'
   data-ingress-protocol='http' data-ingress-port-suffix=''
   data-prev-page='exercises/05-branches' data-current-page='exercises/06-remote-git-repository'
@@ -397,21 +397,25 @@ The most known ones are probably <a href="www.github.com">Github</a> and <a href
 <p>First we will add a remote source, to our repo, by running the following in our teminal</p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: Add remote source
-command: git remote add origin http://$GIT_HOST/mygitrepo.git
+command: |
+    clear
+    git remote add origin http://$GIT_HOST/mygitrepo.git
 </code></pre><p>Then we will push our local repository, to the remote repository.</p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: Push local repository to remote
 command: git push -u -f origin main
 </code></pre><p>Note this command forces the changes thru. So it might not be best practice, outside of this lab.</p>
 <p>In the CLI we use <code>git push</code>, to push the changes, that we have comitted localy, to the remote Git repository.</p>
-<p>Switch back to the editor tab, add more changes to <code>file1.txt</code>, stage the file, give a comit message and commit (just like we did before)
-<img src="1.png" alt="1"></p>
+<p>Switch back to the editor tab, add more changes to <code>file1.txt</code>, stage the file, give a comit message and commit (just like we did before)</p>
+<pre tabindex="0"><code class="language-editor:open-file" data-lang="editor:open-file">title: Open file1.txt
+file: ~/exercises/file1.txt
+</code></pre><p><img src="1.png" alt="1"></p>
 <p>We should now see a <code>Sync changes 1</code> box.</p>
 <p>This one shows that we have one commit, that is not sync yet.
 <img src="2.png" alt="2"></p>
 <p>Click it, and select <code>OK, Don't show again</code> to the warning, that a Sync will both pull and push changes from the remote repository.
 <img src="3.png" alt="3"></p>
-<p>If you get the follow box, then just say no.
+<p>If you get the following box, then just say no.
 <img src="4.png" alt="4"></p>
 <hr>
 <p><strong>Talk in class</strong></p>

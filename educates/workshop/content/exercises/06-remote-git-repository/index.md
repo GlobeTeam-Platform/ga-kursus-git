@@ -13,7 +13,9 @@ First we will add a remote source, to our repo, by running the following in our 
 ```terminal:execute
 prefix: Run
 title: Add remote source
-command: git remote add origin http://$GIT_HOST/mygitrepo.git
+command: |
+    clear
+    git remote add origin http://$GIT_HOST/mygitrepo.git
 ```
 
 Then we will push our local repository, to the remote repository.
@@ -27,6 +29,11 @@ Note this command forces the changes thru. So it might not be best practice, out
 In the CLI we use `git push`, to push the changes, that we have comitted localy, to the remote Git repository.
 
 Switch back to the editor tab, add more changes to `file1.txt`, stage the file, give a comit message and commit (just like we did before)
+```editor:open-file
+title: Open file1.txt
+file: ~/exercises/file1.txt
+```
+
 ![1](1.png)
 
 We should now see a `Sync changes 1` box.
@@ -37,7 +44,7 @@ This one shows that we have one commit, that is not sync yet.
 Click it, and select `OK, Don't show again` to the warning, that a Sync will both pull and push changes from the remote repository.
 ![3](3.png)
 
-If you get the follow box, then just say no.
+If you get the following box, then just say no.
 ![4](4.png)
 
 ---

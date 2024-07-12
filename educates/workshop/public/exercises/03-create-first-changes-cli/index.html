@@ -227,7 +227,7 @@
 <body data-google-tracking-id=''
   data-clarity-tracking-id=''
   data-amplitude-tracking-id='' data-workshop-name='educates-cli--git-0edc899'
-  data-session-namespace='educates-cli-w02-s002' data-workshop-namespace='educates-cli-w02'
+  data-session-namespace='educates-cli-w04-s001' data-workshop-namespace='educates-cli-w04'
   data-training-portal='educates-cli' data-ingress-domain='192.168.50.243.nip.io'
   data-ingress-protocol='http' data-ingress-port-suffix=''
   data-prev-page='exercises/02-create-git-repository' data-current-page='exercises/03-create-first-changes-cli'
@@ -394,7 +394,9 @@
 <p>Create a file with the text &ldquo;initial content&rdquo;</p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: Create file
-command: echo &#34;initial content&#34; &gt; file1.txt
+command: |
+  clear
+  echo &#34;initial content&#34; &gt; file1.txt
 </code></pre><p>Stage the new file, we just created.</p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: Stage file1.txt

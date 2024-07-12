@@ -12,9 +12,11 @@ title: Initialize folder
 command: git init
 ```
 
-When you init a folder, then git creates a .git folder, with the config and database etc. 
+When you init a folder, then git creates a .git folder.
 
-You can see that, by running the following command
+This folder contains all of the information that Git needs to track changes to your codebase, and it's an essential part of the git workflow.
+
+You can see the content of it, by running the following command
 ```terminal:execute
 prefix: Run
 title: Browse git folder
@@ -53,6 +55,8 @@ This should provide the following output
     ├── heads
     └── tags
 ```
+
+We won't go into more details around the content of the folder. Just know, that it's there, and if you need to remove git from a folder, then removing the .git folder, and it's content, is enough.
 
 Let's check the status of the git repo, by running
 ```terminal:execute

@@ -8,7 +8,9 @@ Create a file with the text "initial content"
 ```terminal:execute
 prefix: Run
 title: Create file
-command: echo "initial content" > file1.txt
+command: |
+  clear
+  echo "initial content" > file1.txt
 ```
 
 Stage the new file, we just created.

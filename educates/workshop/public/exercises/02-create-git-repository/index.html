@@ -227,7 +227,7 @@
 <body data-google-tracking-id=''
   data-clarity-tracking-id=''
   data-amplitude-tracking-id='' data-workshop-name='educates-cli--git-0edc899'
-  data-session-namespace='educates-cli-w02-s002' data-workshop-namespace='educates-cli-w02'
+  data-session-namespace='educates-cli-w04-s001' data-workshop-namespace='educates-cli-w04'
   data-training-portal='educates-cli' data-ingress-domain='192.168.50.243.nip.io'
   data-ingress-protocol='http' data-ingress-port-suffix=''
   data-prev-page='exercises/01-configure-git' data-current-page='exercises/02-create-git-repository'
@@ -395,8 +395,9 @@
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: Initialize folder
 command: git init
-</code></pre><p>When you init a folder, then git creates a .git folder, with the config and database etc.</p>
-<p>You can see that, by running the following command</p>
+</code></pre><p>When you init a folder, then git creates a .git folder.</p>
+<p>This folder contains all of the information that Git needs to track changes to your codebase, and it&rsquo;s an essential part of the git workflow.</p>
+<p>You can see the content of it, by running the following command</p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: Browse git folder
 command: tree .git
@@ -429,7 +430,8 @@ command: tree .git
 └── refs
     ├── heads
     └── tags
-</code></pre><p>Let&rsquo;s check the status of the git repo, by running</p>
+</code></pre><p>We won&rsquo;t go into more details around the content of the folder. Just know, that it&rsquo;s there, and if you need to remove git from a folder, then removing the .git folder, and it&rsquo;s content, is enough.</p>
+<p>Let&rsquo;s check the status of the git repo, by running</p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: Get status
 command: git status

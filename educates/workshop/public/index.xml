@@ -12,7 +12,7 @@
       <link>http://localhost:1313/workshop/content/exercises/05-branches/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/workshop/content/exercises/05-branches/</guid>
-      <description>Branching means you diverge from the main line of development and continue to do work without messing with that main line There are many concepts on when to branch, and for how long.&#xA;For this module, we will focus on the how, more than on the why.&#xA;To see the branches currently avaliable run&#xA;prefix: Run title: See git branches command: git branch --list the output should look like this</description>
+      <description>Branching means you diverge from the main line of development and continue to do work without messing with that main line There are many concepts on when to branch, and for how long.&#xA;For this module, we will focus on the how, more than on the why.&#xA;To see the branches currently avaliable run&#xA;prefix: Run title: See git branches command: | clear git branch --list the output should look like this</description>
     </item>
     <item>
       <title>Clone Repository</title>
@@ -33,21 +33,21 @@
       <link>http://localhost:1313/workshop/content/exercises/03-create-first-changes-cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/workshop/content/exercises/03-create-first-changes-cli/</guid>
-      <description>Let&amp;rsquo;s use the CLI to create some changes and see how Git handles them.&#xA;Create a file with the text &amp;ldquo;initial content&amp;rdquo;&#xA;prefix: Run title: Create file command: echo &amp;#34;initial content&amp;#34; &amp;gt; file1.txt Stage the new file, we just created.&#xA;prefix: Run title: Stage file1.txt command: git add file1.txt commit the staged changes, with the commit message &amp;ldquo;My first change&amp;rdquo;&#xA;prefix: Run title: Commit changes command: git commit -m &amp;#34;My first change&amp;#34; make a new change to the file</description>
+      <description>Let&amp;rsquo;s use the CLI to create some changes and see how Git handles them.&#xA;Create a file with the text &amp;ldquo;initial content&amp;rdquo;&#xA;prefix: Run title: Create file command: | clear echo &amp;#34;initial content&amp;#34; &amp;gt; file1.txt Stage the new file, we just created.&#xA;prefix: Run title: Stage file1.txt command: git add file1.txt commit the staged changes, with the commit message &amp;ldquo;My first change&amp;rdquo;&#xA;prefix: Run title: Commit changes command: git commit -m &amp;#34;My first change&amp;#34; make a new change to the file</description>
     </item>
     <item>
       <title>Create First Changes (UI)</title>
       <link>http://localhost:1313/workshop/content/exercises/04-create-first-changes-ui/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/workshop/content/exercises/04-create-first-changes-ui/</guid>
-      <description>Let&amp;rsquo;s now use the UI, to do the same as before.&#xA;Switch to the editor tab.&#xA;Open file1.txt and add a new line at the bottom. In our example we wrote &amp;#34;More content&amp;#34; Click on the source Controlicon (there should be a number next to it) If the number is 2, that means that there is 2 files with changes in this Git repository.&#xA;If you followed the guide, then the 2 files are</description>
+      <description>Let&amp;rsquo;s now use the UI, to do the same as before.&#xA;title: Open file1.txt file: ~/exercises/file1.txt Open file1.txt and add a new line at the bottom. In our example we wrote &amp;#34;More content&amp;#34; Click on the source Control icon (there should be a number next to it) If the number is 2, that means that there is 2 files with changes in this Git repository.&#xA;If you followed the guide, then the 2 files are</description>
     </item>
     <item>
       <title>Create GIT Repository</title>
       <link>http://localhost:1313/workshop/content/exercises/02-create-git-repository/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/workshop/content/exercises/02-create-git-repository/</guid>
-      <description>Let&amp;rsquo;s initialize our working folder with git.&#xA;Initialize the folder, so it can be tracked using git by running&#xA;prefix: Run title: Initialize folder command: git init When you init a folder, then git creates a .git folder, with the config and database etc.&#xA;You can see that, by running the following command&#xA;prefix: Run title: Browse git folder command: tree .git This should provide the following output&#xA;.git ├── HEAD ├── branches ├── config ├── description ├── hooks │ ├── applypatch-msg.</description>
+      <description>Let&amp;rsquo;s initialize our working folder with git.&#xA;Initialize the folder, so it can be tracked using git by running&#xA;prefix: Run title: Initialize folder command: git init When you init a folder, then git creates a .git folder.&#xA;This folder contains all of the information that Git needs to track changes to your codebase, and it&amp;rsquo;s an essential part of the git workflow.&#xA;You can see the content of it, by running the following command</description>
     </item>
     <item>
       <title>Fork a repository</title>
@@ -61,7 +61,7 @@
       <link>http://localhost:1313/workshop/content/exercises/06-remote-git-repository/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/workshop/content/exercises/06-remote-git-repository/</guid>
-      <description>A local git repository is fine. But when you need to work with others, then a remote repository, is needed.&#xA;There are many different solutions for this. The most known ones are probably Github and Gitlab.&#xA;In this lab, we have our own Git server, that we can use.&#xA;First we will add a remote source, to our repo, by running the following in our teminal&#xA;prefix: Run title: Add remote source command: git remote add origin http://$GIT_HOST/mygitrepo.</description>
+      <description>A local git repository is fine. But when you need to work with others, then a remote repository, is needed.&#xA;There are many different solutions for this. The most known ones are probably Github and Gitlab.&#xA;In this lab, we have our own Git server, that we can use.&#xA;First we will add a remote source, to our repo, by running the following in our teminal&#xA;prefix: Run title: Add remote source command: | clear git remote add origin http://$GIT_HOST/mygitrepo.</description>
     </item>
     <item>
       <title>Workshop Overview</title>

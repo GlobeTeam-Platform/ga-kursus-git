@@ -227,7 +227,7 @@
 <body data-google-tracking-id=''
   data-clarity-tracking-id=''
   data-amplitude-tracking-id='' data-workshop-name='educates-cli--git-0edc899'
-  data-session-namespace='educates-cli-w02-s002' data-workshop-namespace='educates-cli-w02'
+  data-session-namespace='educates-cli-w04-s001' data-workshop-namespace='educates-cli-w04'
   data-training-portal='educates-cli' data-ingress-domain='192.168.50.243.nip.io'
   data-ingress-protocol='http' data-ingress-port-suffix=''
   data-prev-page='exercises/04-create-first-changes-ui' data-current-page='exercises/05-branches'
@@ -397,10 +397,11 @@
 <p>To see the branches currently avaliable run</p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
 title: See git branches
-command: git branch --list
+command: |
+  clear
+  git branch --list
 </code></pre><p>the output should look like this</p>
-<pre tabindex="0"><code>  list
-* main
+<pre tabindex="0"><code>* main
 </code></pre><p>The <code>*</code>shows what branch we are currently on.</p>
 <p>Let&rsquo;s create a new branch by running</p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
@@ -411,8 +412,7 @@ command: git branch my-new-branch
 title: List branches
 command: git branch --list
 </code></pre><p>The output should now be</p>
-<pre tabindex="0"><code>  list
-* main
+<pre tabindex="0"><code>* main
   my-new-branch
 </code></pre><p>If we want to move to our new branch, we can simply run</p>
 <pre tabindex="0"><code class="language-terminal:execute" data-lang="terminal:execute">prefix: Run
@@ -423,8 +423,7 @@ command: git checkout my-new-branch
 title: Get current branch
 command: git branch --list
 </code></pre><p>The output should now be</p>
-<pre tabindex="0"><code>  list
-  main
+<pre tabindex="0"><code>  main
 * my-new-branch
 </code></pre><p>All the changes you make and commit from now on, will be in the <code>my-new-branch</code> branch</p>
 <p>Let&rsquo;s make some new changes, commit them, and then merge them back to the main branch</p>
@@ -444,7 +443,7 @@ command: git checkout main
 title: Merge branch
 command: git merge my-new-branch
 </code></pre><p>Since our new branch came directly from the `main´ branch, and there has been no changes to the branch, we can simply merge it, without any conflicts.</p>
-<p>Handeling Merge conflicts is a more advanced topic, that is not part of this course.</p>
+<p>Handeling Merge conflicts is a more advanced topic, that is outside the scope of this course.</p>
 
         </div>
         

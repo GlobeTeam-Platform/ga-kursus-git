@@ -13,12 +13,13 @@ To see the branches currently avaliable run
 ```terminal:execute
 prefix: Run
 title: See git branches
-command: git branch --list
+command: |
+  clear
+  git branch --list
 ```
 
 the output should look like this 
 ```
-  list
 * main
 ```
 
@@ -40,7 +41,6 @@ command: git branch --list
 
 The output should now be
 ```
-  list
 * main
   my-new-branch
 ```
@@ -61,7 +61,6 @@ command: git branch --list
 
 The output should now be
 ```
-  list
   main
 * my-new-branch
 ```
@@ -96,4 +95,4 @@ command: git merge my-new-branch
 
 Since our new branch came directly from the `main´ branch, and there has been no changes to the branch, we can simply merge it, without any conflicts.
 
-Handeling Merge conflicts is a more advanced topic, that is not part of this course.
+Handeling Merge conflicts is a more advanced topic, that is outside the scope of this course.
