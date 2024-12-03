@@ -35,6 +35,11 @@ command: echo "new content" >> file1.txt
 ```
 
 Note at any time, you can see the content of the file, by typing `cat file1.txt` or by selecting it in the editor view.
+```terminal:execute
+prefix: Run
+title: cat file1.txt
+command: cat file1.txt
+```
 
 Stage the new changes
 ```terminal:execute
